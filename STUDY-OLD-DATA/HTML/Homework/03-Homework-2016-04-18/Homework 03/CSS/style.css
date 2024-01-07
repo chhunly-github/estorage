@@ -1,0 +1,53 @@
+@font-face {
+   font-family: OpenSans-Regular;
+   src: url("../font/OpenSans-Regular.ttf");
+}
+.slide{
+	margin: 10px auto;
+	width: 1200px;
+	height: 1000px;
+}
+.slide .nav{
+	height:135px;
+	width:1200px;
+}
+.slide .nav #nav-logo img{
+	float: left;
+	width: 160px;
+	height: 110px;
+}
+.slide .nav #nav-address{
+	float: left;
+	text-align: center;
+	margin: 35px 40px;
+}
+.slide .nav #nav-photo img{
+	float: left;
+	width: 125px;
+	height: 125px;
+	margin: 3px 10px;
+	border-radius: 7px;
+}
+.form-info{
+	margin: 40px auto;
+}
+.form-info .form-fieldset{
+	background-color:#DADADA;
+	border: 1px solid #2196F3;
+}
+.form-info .lengend-font{
+	font-family: OpenSans-Regular;
+	font-size: 18px;
+	color: white;
+	background-color: #2196F3;
+}
+input[type=text]{
+	width: 300px;
+	margin: 100px auto;
+}
+select:invalid { color: gray; }
+.form-info .field{
+	margin: 20px auto;
+}
+
+

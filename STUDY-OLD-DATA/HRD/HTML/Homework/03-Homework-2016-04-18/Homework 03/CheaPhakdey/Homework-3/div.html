@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HRD Register</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="header-image">
+			<img src="logohrd.png" class="image-hrd">
+		</div>
+		<div class="header-text">
+			<span>
+				#12, St 323, Sangkat Boeung Kak II, Khan Toul Kork, Phnom Penh <br>
+				Tel: (855) 23 99 13 14, Fax (855) 23 99 14 15 <br>
+				Email: ingo.kshrd@gmail.com, pirum.gm@gmail.com Website: www.kshrd.com.kh, Facebook:facebook.com/ksignhrd
+			</span>
+		</div>
+		<div class="header-image">
+			<img src="DSC_0308.JPG" class="image-photo">
+		</div>
+	</div>
+	<br>
+	<div class="content">
+		<form action="me.php" method="get">
+			<fieldset style="background-color: #E6E6FA">
+				<legend class="background">
+					Student Information
+				</legend>
+				<div class="row">
+					<div class="col-1">
+						<span class="title">Student ID:</span>
+					</div>
+					<div class="col-2">
+						<input type="text" name="ID" value="20160111" size="30" disabled>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title"> National ID Number<span class="star">*</span>: </span>
+					</div>
+					<div class="col-2 ">
+						<input type="number" size="30" placeholder="Khmer ID Number" name="National ID" required style="width:240px;">
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title"> Full Name:<span class="star">*</span> </span>
+					</div>
+					<div class="col-2 dis">
+						<input type="text" size="30" placeholder="First name" name="fname" required>
+					</div>
+					<div class="col-3 dis">
+						<input type="text" size="30" placeholder="Last name" name="lname" required>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title"> Gender:</span>
+					</div>
+					<div class="col-2 ">
+						<input type="radio" value="Male" name="Gender" value="male" checked> Male
+						<input type="radio" value="Female" name="Gender" value="female">Female
+					</div>
+					<div class="col-3">
+						<div class="col-3-label">
+							<span class="col-3-label-size"> University</span>
+						</div>
+						<div class="col-3-box">
+							<select class="width" name="University">
+								<optgroup label="Public Schools">
+									<option value="rupp">RUPP</option>
+									<option value="ITC">ITC</option>
+								</optgroup>
+								<optgroup label="Private Schools">
+									<option value="norton">Norton</option>
+									<option value="setec">SETEC</option>
+								</optgroup>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title"> Date of Birth:</span>
+					</div>
+					<div class="col-2">
+						<input type="date" size="80" name="dof" class="date" value="dd/mm/yyyy">
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class> Place of Birth:</span>
+					</div>
+					<div class="col-2">
+						<input type="text" size="115" name="pof" placeholder="Place of birth">
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title"> Permanent Address</span>
+					</div>
+					<div class="col-2">
+						<textarea cols="117" rows="4" placeholder="Current Address"></textarea>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title"> Contact:</span>
+					</div>
+					<div class="col-2">
+						<span class="lblph">Phone:</span>
+						<div class="txtphone">
+							<input type="text" size="15" placeholder="Phone" >
+						</div>
+						<span class="lblemail">Email<span class="star">*</span>:</span>
+					</div>
+					<div class="col-3">
+						<div class="col-3-email">
+							<input type="email" size="65" placeholder="Email" required="">
+						</div>
+					</div>
+				</div>
+			</fieldset>
+		<br>
+		<div class="clear"></div>
+			<fieldset style="background-color: #E6E6FA">
+				<legend class="background">
+					Parents Information
+				</legend>
+				<div class="row">
+					<div class="col-1">
+						<span class="title">Father Name:</span>
+					</div>
+					<div class="col-2">
+						<input type="text" name="faName" size="115">
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title">Phone:</span>
+					</div>
+					<div class="col-2">
+						<div class="txtphone">
+							<input type="text" name="faName" size="20">
+						</div>	
+						<span class="lblJob">Job:</span>
+					</div>
+					<div class="col-3">
+						<input type="text" name="faName" size="20">
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title">Mother Name:</span>
+					</div>
+					<div class="col-2">
+						<input type="text" name="MoName"size="115">
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">					
+						<span class="clear title">Parent's Address:</span>
+					</div>
+					<div class="col-2">
+						<textarea cols="117" rows="3" placeholder="Home Number, Street, Sangkat, Khan, City/Province"></textarea>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="row">
+					<div class="col-1">
+						<span class="title">Phone:</span>
+					</div>
+					<div class="col-2">
+						<div class="txtphone">
+							<input type="text" name="faName" size="20">
+						</div>	
+						<span class="lblJob">Job:</span>
+					</div>
+					<div class="col-3">
+						<input type="text" name="MoName" size="20">
+					</div>
+				</div>		
+				<div class="clear"></div>		
+				<div class="row">
+					<div class="contact">
+						<span class="width">Complete Form Issuer Contact:<br>
+						Apply From Issuer Contact:</span>
+					</div>
+					<div class="contPhone">
+					<span class="widthNum">077 77 123 6 <br>
+					099 768 481, 015 8888 04 <br>
+					086 53 93 54, 097 959 33 88</span>
+				</div>
+				<div class= "contact">
+					<input class="button" type="submit" value="Update">
+				</div>
+			</fieldset>
+		</form>
+	</div>
+	<div class="clear footer">
+		<p align="center">Copyright &copy KSHRD 2016.All right reserved</p>
+	</div>
+
+</body>
+</html>

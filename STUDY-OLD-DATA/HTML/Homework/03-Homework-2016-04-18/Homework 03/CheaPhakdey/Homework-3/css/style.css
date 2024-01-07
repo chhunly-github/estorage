@@ -1,0 +1,149 @@
+.header{
+	width:1150px;
+	margin: 0 auto;
+}
+.header-image{
+	width: 150px;
+	float: left;
+}
+.image-hrd{
+	width: 150px;
+	height: 100px;
+	margin-right: 40px;
+}
+.image-photo{
+	height: 160px;
+  	width: 135px;
+    margin-left: 25px;
+    border-radius: 10%;
+}
+.header-text{
+	margin: 25px;
+	width: 800px;
+	text-align: center;
+	float: left;
+}
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+.row{
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.title{
+	width: 200px;
+}
+.col-1{
+	width: 220px;
+	float: left;
+}
+.col-2{
+	width: 300px;
+	float: left;
+}
+.col-3{
+	width:	400px;
+	float: left;
+}
+.col-3-label{
+	width: 170px;
+	float: left;
+}	
+.col-3-label-size{
+	width: 140px;
+	float: left;
+}
+.col-3-box{
+	width: 230px;
+	float: left;
+}
+		
+.star{
+	color: red;
+}
+		
+.clear{
+	clear: both;
+}
+
+.date{
+	width: 240px;
+}
+
+.background{
+	background-color: #1E90FF;
+}
+
+.border{
+	border: 1px solid #1E90FF;
+}
+
+.col-2-ph{
+width: 190px;
+float: left;
+}
+
+.lblph{
+	width: 60px;
+	float: left;
+}
+
+.lblJob{
+	width: 70px;
+	float: left;
+	margin-left: 42px;
+}
+
+.txtphone{
+	width: 180px;
+	float: left;
+}
+
+.lblemail{
+	width: 60px;
+}
+
+.col-3-email{
+	margin-left: 60px;
+	width: 200px;
+	float: left;
+}
+
+.contact{
+	width: 270px;
+	float: left;
+}
+
+.contPhone{
+	width: 640px;
+	float: left;
+}
+
+.width{
+	width: 230px;
+	float: left;
+}
+
+.widthNum{
+	width: 300px;
+}
+
+.footer{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.button{
+	width: 80px;
+	color: white;
+	background-color: purple;
+	float: left;
+}
+
+.foot{
+	width: 900px;
+}
+	

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<head>
+	<title>HRD Register</title>
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body style="margin: 0;padding: 0;">
+<!-- Header information-->
+	<div class="slide">
+		<div class="nav">
+			<div id="nav-logo">
+				<img src="Photo/logohrd.png" alt="hrdlogo">
+			</div>
+			<div id="nav-address">
+						#12, St323, Sangkat Boeung Kak II, Kan Toul Kork, Phnom Penh<br>
+						Tel: (855) 23 99 13 14, Fax(855) 23 99 14 15<br>
+						Email: info.kshrd@gmail.com, phirum.gm@gmail.com Website: www.kshrd.com.kh, Facebook:facebook.com/ksignhrd
+			</div>
+			<div id="nav-photo">
+				<img src="Photo/profile.jpg" alt="Prolfile">
+			</div>
+		</div>
+<!-- Students information-->
+		<div class="form-info">
+			<form >
+			  	<fieldset class="form-fieldset">
+			    	<legend class="lengend-font">Student Information</legend> 
+			    	<div style="margin: 10px auto">
+			    		<div class="field">
+			    			<label>Student ID:</label>
+			    			<input readonly="true" type="text" value="20160111" style="background-color: #F1F1DD;margin: 0 91px;">
+			    		</div>
+						<div class="field">	
+							<label>National ID Number</label><font color="red">*</font>:
+						    <input type="number" name="ID" style="width: 306px;margin:0 20px;" title="please fill out this field." min="1" max="50" placeholder="Khmer ID Number"  required>
+			    		</div>
+			    		<div class="field">	
+							<label>Full Name:</label><font color="red">*</font>
+						   <input type="text" required placeholder="First Name" style="margin:0 20px 0 84px;" title="please fill out this field">
+						   <input type="text" required="" placeholder="Last Name"style="margin: 0 1px;" title="please fill out this field">
+			    		</div>
+			    		<div class="field">
+			    			<label>Gender:</label>
+			    			<input type="radio" name="gender" value="male" checked style="margin-left:  110px;"> Male
+				  			<input type="radio" name="gender" value="female"> Female
+							<label style="margin-left:203px;">University:</label>
+							<select style="width: 200px;margin-left:150px;">
+								<optgroup label="Public Schools">
+									<option value="RUPP">RUPP</option>
+								    <option value="ICT">ICT</option>
+								</optgroup>
+								<optgroup label="Private Schools">
+								    <option value="Norton">Norton</option>
+								    <option value="Setec">SETEC</option>
+								  </optgroup>
+							</select>
+			    		</div>
+			    		<div class="field">
+			    			<label>Date Of Birth:</label>
+						    <input type="date" style="margin-left:70px;width: 898px;">
+			    		</div>
+			    		<div class="field">
+			    			<label>Place Of Birth:</label>
+			    			<input type="text" style="width: 900px;margin: 0 0 0 65px;" placeholder="Place Of Birth">
+			    		</div>
+			    		<div style="height: 60px;float: left;width: 1070px">
+							<div style="width: 165px;height: 20px;float: left;">
+			    				<label>Permanent Address</label>
+							</div>
+							<div style="width: 870px;height: 60px;float: left;">
+								<textarea cols="126" rows="4" style="resize: none;" placeholder="Corrent Address"></textarea>
+							</div>
+			    		</div>
+			    		<div class="field" style="float: left;">
+			    			<label>Contact</label>
+			    			<label style="margin:0 20px 0 110px;">Phone</label>
+			    			<input type="text" placeholder="Phone" style="width: 120px;margin:0 20px 0 0;"> 
+			    			<label style="margin: 0 140px 0 0">Email<font color="red">*</font>:</label>
+			    			<input type="text" placeholder="Email" title="please fill out this field" required="" style="width: 496px;margin:0 20px 0 0;"> 
+			    		</div>
+			    	</div>
+			    </fieldset>
+					</div>
+<!-- Parents information-->
+		<div class="form-info">
+			  	<fieldset class="form-fieldset">
+			    	<legend class="lengend-font">Parents Information</legend> 
+			    	<div style="margin: 10px auto">
+			    		<div class="field">
+			    			<label>Father Name:</label>
+			    			<input type="text" style="width: 900px;margin: 0 0 0 75px;">
+			    		</div>
+			    		<div class="field" style="float: left;margin:40px 0 0 0">
+			    			<label>Phone:</label>
+			    			<input type="text" style="width: 200px;margin:0 20px 0 120px;"> 
+			    			<label style="margin: 0 40px 0 0">Job:</label>
+			    			<input type="text" style="width: 200px;margin:0 2px 0 0;"> 
+			    		</div>
+			    		<div class="field" style="float: left;">
+			    			<label>Mother Name:</label>
+			    			<input type="text" style="width: 900px;margin: 0 0 0 70px;">
+			    		</div>
+			    		<div style="height: 60px;float: left;width: 1070px">
+							<div style="width: 165px;height: 20px;float: left;">
+			    				<label>Parents' Address</label>
+							</div>
+							<div style="width: 870px;height: 60px;float: left;margin-left: 3px">
+								<textarea cols="126" rows="4" style="resize: none;" placeholder="HOME Number, Street,Sangkat, Khan, City/Province"></textarea>
+							</div>
+			    		</div>
+			    		<div class="field" style="float: left;">
+			    			<label>Phone:</label>
+			    			<input type="text" style="width: 200px;margin:0 20px 0 120px;"> 
+			    			<label style="margin: 0 40px 0 0">Job:</label>
+			    			<input type="text" style="width: 200px;margin:0 2px 0 0;"> 
+			    		</div>
+			    		<div class="field" style="clear: left;">
+			    			<div style="float: left;">
+			    				<label>Complete Form Issuer Contact:</label><br>
+			    				<label>Apply from Issuer Contact:</label>
+			    			</div>
+			    			<div style="float: left; margin-left: 40px;">
+			    				<label>077 77 123 6</label><br>
+			    				<label>099 768 481, 015 8888 04</label><br>
+			    				<label>086 53 93 54, 097 959 33 88</label>
+			    			</div>
+			    			<div style="margin:0 0 0 900px;width: 100px;height: 50px;">
+			    				<input type="submit" value="Update" style="width: 80px;height: 30px;color: white; background-color: blue;"></input>
+			    			</div>
+			    		</div>
+			    	</div>
+			    </fieldset>
+			    <div style="clear:left; text-align: center;margin: 10px auto;">Copyright &copy KSHRD 2016,All right reserved</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

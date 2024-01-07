@@ -1,0 +1,230 @@
+/*-------------------------------------main container and body set-----------------------------------------*/
+.container{
+	width: 100%;
+	/*height: 1024px;*/
+	/*background-image: url("reader.jpg");*/
+	background-color: #cfd8dc;
+}
+
+/*----------------------------------------end of container and body set------------------------------------*/
+
+
+/*---------------------------------------------------start header------------------------------------------*/
+.navigation{
+
+	width: 100%;
+	
+}
+
+.menu{
+	width: 100%;
+	background-color: #82B1FF;
+	position: fixed;
+	left: 0px;
+	margin: 0 auto;
+	top: 0px;
+	border: 2px solid black;
+
+}
+.home{
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+	height: auto;
+}
+.home a{
+	display: block;
+	padding: 10px;
+}
+.home:hover {
+	background-color: black;
+	color: white;
+}
+
+.menu li{
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+	height: auto;
+}
+.menu_list{
+	position: relative;
+	display: inline-block;
+}
+.menu_list a{
+	display: block;
+	padding: 10px;
+}
+.menu_list-dropdown{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	padding-left: 0px;
+	display: none;
+	background-color: blue;
+}
+.menu_list-dropdown li{
+	display: block;
+	
+}
+.menu_list-dropdown li a{
+	display: block;
+	
+}
+
+.menu_list:hover{
+	background-color: blue;
+	color: white;
+}
+.dropdown_list a{
+	display: block;
+	padding: 10px;
+}
+.dropdown_list:hover .menu_list-dropdown{
+	display: block;
+}
+.menu ul li a:hover{
+	background-color: yellow;
+}
+
+
+/*----------------------------------------------end of header-----------------------------------------------*/
+
+/*---------------------------------------------start content-------------------------------------------------*/
+
+/*------------------main content------------------*/
+.content{
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 100px;
+	/*height: 500px;*/
+	background-color: #69f0ae;
+
+}
+
+/*----------------content navigation (left side)-------------------*/
+.content_nav{
+	width: 19%;
+	/*height: 500px;*/
+	float: left;
+	/*background-color: #ccffcc;*/
+	margin-left: 5px;
+	
+}
+.content_nav_list{
+	list-style: none;
+	padding-left: 5px;
+	
+	border-bottom: 1px solid red;
+}
+
+.content_nav_list li a{
+	display: block;
+	padding: 5px;
+}
+.content_nav_list li:hover{
+	background-color: #1e88e5;
+}
+.content_nav_list a{
+	text-decoration: none;
+}
+/*----------------end of content navigation-------------------*/
+
+/*----------------content detail (center side)-------------------*/
+.content_detail{
+	width: 60%;
+	/*height: 500px;*/
+	float: left;
+	background-color: white;
+	border-left: 1px #ec407a solid;
+	border-right: 1px #ec407a solid;
+	padding: 5px;
+}
+.click_image img{
+	height: 40px;
+	margin: 0 auto;
+}
+.sub_content{
+	width: 100%;
+	height: 500px;
+	background-color: yellow;
+}
+
+.sub_content ul{
+	background-color: blue;
+
+}
+.sub_content ul li{
+	display: inline-block;
+	padding: 10px;
+}
+/*----------------end of content detail-------------------*/
+
+/*----------------content related (right side)-------------------*/
+.content_related{
+	width: 19%;
+	/*height: 500px;*/
+	/*background-color: #7cb342;*/
+	float: left;
+	margin-top: 15px;
+}
+.content_related ul{
+	width: 97%;
+	text-align: center;
+}
+.content_related ul li{
+	list-style: none;
+	width: 100%;
+	
+}
+.content_related ul li{
+	border-bottom:solid 1px black;
+	text-align: center;
+	margin: 10px;
+}
+
+.content_related li:hover{
+	outline: 3px solid #76ff03;
+	background-color: #7986cb;
+}
+.content_related img:hover{
+	opacity: 0.8;
+}
+/*----------------end of content related-------------------*/
+
+
+
+/*----------------------------------------------end of content-----------------------------------------00-----*/
+
+/*-----------------------------------------------start footer-----------------------------------------------*/
+.footer{
+	clear: both;
+	width: 100%;
+/* 	height: 100px; */
+	background-color: #004d40;
+	border-top: 1px solid black;
+}
+
+.Our_vision{
+	width: 32%;
+	float: left;
+	/* background-color: yellow; */
+	margin:0.5%;
+	text-align: center;
+}
+
+.contact_us{
+	width: 32%;
+	float: left;
+	/* background-color: blue; */
+/* 	height: 100px; */
+	margin:0.5%;
+}
+.About_us{
+	width: 32%;
+	float: left;
+	/* background-color: yellow; */
+	/* height: 100px; */
+	margin:0.5%;
+}
+/*---------------------------------------------end of footer------------------------------------------------*/

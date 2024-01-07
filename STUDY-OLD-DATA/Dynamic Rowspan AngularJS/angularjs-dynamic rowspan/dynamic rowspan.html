@@ -1,0 +1,146 @@
+<html lang="en" >
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <!-- Angular Material style sheet -->
+  <style>
+    table, th, td {
+      border: 1px solid black;
+  }
+  </style>
+</head>
+<body  ng-app="testApp" ng-controller="testController">
+   <table>
+    <tr ng-repeat-start="t in testData">
+        <td rowspan="{{t.rowspan}}">{{t.test}}</td>
+        <!-- <td>{{ t[(t|objectKeys)[0]][0]}}</td> -->
+        <td rowspan="{{t.Values[0].b.length}}">{{t.Values[0].a}}</td>
+        <td >{{(t.Values[0]).b[0]}}</td>
+    </tr>
+    <tr ng-repeat="t2 in t.Values[0].b.slice(1)">
+        <td>{{t2}}</td>
+    </tr>
+    <tr ng-repeat-start="t2s in t.Values.slice(1)">
+        <td rowspan="{{t2s.b.length}}">{{t2s.a}}</td>
+        <td>{{ t2s.b[0] }}</td>
+    </tr>
+    <tr ng-repeat="t3 in t2s.b.slice(1)" ng-repeat-end>        
+        <td>{{ t3 }}</td>
+    </tr>
+    <tr ng-repeat-end ng-if="false" ><td></td></tr>
+  </table>
+   <!-- 
+     <table>
+     <tr>
+    <th rowspan="2">ទទួលទំនិញ</th>
+    <th colspan="3">ពត៌មានបញ្ជាទិញ</th>
+    <th rowspan="2">ចំនួនបញ្ជាទិញ</th>
+    <th rowspan="2">បានទទួល</th>
+    <th rowspan="2">នៅសល់</th>
+    <th colspan="5">ពត៌មានទទួល</th>
+     </tr>
+     <tr>
+    <th>ឈ្មោះទំនិញ</th>
+    <th>អ្នកផ្គត់ផ្គង់</th>
+    <th>តម្លៃ</th>
+    <th>សាខា</th>
+    <th>ចំនួន</th>
+    <th>vehicle</th>
+    <th>អ្នកទទួល</th>
+    <th>កាលបរិច្ឆេទ</th>
+     </tr>
+    <tr ng-repeat-start="order in orders">
+        <td rowspan="{{order.ROWSPAN}}">
+        {{order.ORDER_ID}} <br>
+        {{order.ORDER_DATE.split('.')[0]}}
+        </td>
+        <td rowspan="{{order.ORDER_DETAILS[0].IMPORTS.length}}">{{order.ORDER_DETAILS[0].PRODUCT.PRODUCT_NAME_ENG}}</td>
+        <td rowspan="{{order.ORDER_DETAILS[0].IMPORTS.length}}">{{order.ORDER_DETAILS[0].SUPPLIER.SUPPLIERNAME}}</td>
+        <td rowspan="{{order.ORDER_DETAILS[0].IMPORTS.length}}">{{order.ORDER_DETAILS[0].UNIT_PRICE}} {{order.ORDER_DETAILS[0].CURRENCY.CURRENCY_SIGN}}</td>
+        <td rowspan="{{order.ORDER_DETAILS[0].IMPORTS.length}}">{{order.ORDER_DETAILS[0].QUANTITY}}</td>
+        <td rowspan="{{order.ORDER_DETAILS[0].IMPORTS.length}}">{{order.ORDER_DETAILS[0].IMPORTED_QUANTITY}}</td>
+        <td rowspan="{{order.ORDER_DETAILS[0].IMPORTS.length}}">{{order.ORDER_DETAILS[0].QUANTITY-order.ORDER_DETAILS[0].IMPORTED_QUANTITY}}</td>
+        <td >{{(order.ORDER_DETAILS[0]).IMPORTS[0].BRANCH.BRANCHNAME}}</td>
+        <td >{{(order.ORDER_DETAILS[0]).IMPORTS[0].QUANTITY}}</td>
+        <td >{{(order.ORDER_DETAILS[0]).IMPORTS[0].VEHICLE.VEHICLE_NUMBER}}</td>
+        <td>{{(order.ORDER_DETAILS[0]).IMPORTS[0].USER }}</td>
+        <td>{{(order.ORDER_DETAILS[0]).IMPORTS[0].IMPORT_DATE.split(' ')[0] }}</td>
+    </tr>
+    <tr ng-repeat="imp in order.ORDER_DETAILS[0].IMPORTS.slice(1)">
+        <td>{{imp.BRANCH.BRANCHNAME }}</td>
+        <td>{{imp.QUANTITY}}</td>
+        <td>{{imp.VEHICLE.VEHICLE_NUMBER }}</td>
+        <td>{{imp.USER }}</td>
+        <td>{{imp.IMPORT_DATE.split(' ')[0] }}</td>
+    </tr>
+    <tr ng-repeat-start="od in order.ORDER_DETAILS.slice(1)">
+        <td rowspan="{{od.IMPORTS.length}}">{{od.PRODUCT.PRODUCT_NAME_ENG}}</td>
+        <td rowspan="{{od.IMPORTS.length}}">{{od.SUPPLIER.SUPPLIERNAME}}</td>
+        <td rowspan="{{od.IMPORTS.length}}">{{od.UNIT_PRICE}} {{od.CURRENCY.CURRENCY_SIGN}}</td>
+        <td rowspan="{{od.IMPORTS.length}}">{{od.QUANTITY}}</td>
+        <td rowspan="{{od.IMPORTS.length}}">{{od.IMPORTED_QUANTITY}}</td>
+        <td rowspan="{{od.IMPORTS.length}}">{{od.QUANTITY-od.IMPORTED_QUANTITY}}</td>
+        <td>{{ od.IMPORTS[0].BRANCH.BRANCHNAME }}</td>
+        <td>{{ od.IMPORTS[0].QUANTITY }}</td>
+        <td>{{ od.IMPORTS[0].VEHICLE.VEHICLE_NUMBER }}</td>
+        <td>{{ od.IMPORTS[0].USER }}</td>
+        <td>{{ od.IMPORTS[0].IMPORT_DATE.split(' ')[0] }}</td>
+    </tr>
+    <tr ng-repeat="imp2 in od.IMPORTS.slice(1)" ng-repeat-end>        
+        <td>{{ imp2.BRANCH.BRANCHNAME }}</td>
+        <td>{{ imp2.QUANTITY }}</td>
+        <td>{{ imp2.VEHICLE.VEHICLE_NUMBER }}</td>
+        <td>{{ imp2.USER }}</td>
+        <td>{{ imp2.IMPORT_DATE.split(' ')[0] }}</td>
+    </tr>
+   
+    <tr ng-repeat-end ng-if="false" ><td></td></tr>
+   </table> -->
+</div>
+
+
+  
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="angular.min.js"></script>
+  
+  <!-- Your application bootstrap  -->
+  <script type="text/javascript">    
+  
+    angular.module('testApp', [])
+.controller('testController', function ($scope, $http) {
+    $scope.testData = [ 
+        {
+            'rowspan' : 7,
+            'test'   : 'hello world;',
+            'Values': [
+              {'a':'a--------',
+              'b':[1,2,3]}, 
+              {'a':'b--------',
+              'b':[4,5]}, 
+              {'a':'c--------',
+              'b':[6,7]}],
+        },
+        {
+            'rowspan' : 4,
+            'test'   : 'hello world;2',
+            'Values': [{'a':'d--------',
+                    'b':[8,9]},
+                     {'a':'e--------',
+                     'b':[10,11]}]
+        }
+    ];
+    /*$http.get('orders.json').then(function(response){
+      $scope.orders = response.data;
+      console.log(response.data);
+    });*/
+});
+  </script>
+  
+  
+</body>
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->

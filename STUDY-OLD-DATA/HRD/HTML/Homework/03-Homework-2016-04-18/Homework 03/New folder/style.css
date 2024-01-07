@@ -1,0 +1,87 @@
+
+#main_div{
+	margin: 0 auto;
+	width: 80%;
+	height: 1000px;
+
+}
+/*top div*/
+#top_bar{
+	margin: 0 auto;
+	height: 20%;
+}
+#top_logo img{
+	float:left;
+	width: 15%;
+}
+#title{
+	float: left;
+	width: 70%;
+	text-align: center;
+	margin-top: 2%;
+}
+#top_photo{
+	float: right;
+	width: 15%;
+	
+}
+#top_photo img{
+	width: 80%;
+	border-radius: 20px;
+	
+}
+/*end of top*/
+/*center div*/
+.field_style{
+	font-family: arial;             
+	border: solid 1px blue;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+}
+.field_style legend{
+	font-size: 18px;
+	color: white;
+	background-color: #2196F3;
+}
+form{
+	margin-top: 30px;
+	background-color: #EEEEEE;
+}
+
+.formartField{
+	background-color: #e0e0e0;
+	width: 30%;
+}
+.field{
+	width: 30%;
+
+}
+.parent_input{
+	width: 61%;
+
+}
+.label{
+	width: 15%;
+	float: left;
+	margin-left: 10%;
+	padding-top: 2%;
+}
+.alterisk{
+	color: red;
+}
+.input{
+	width: 61%;
+
+}
+.submit{
+	background-color: lightblue;
+	width: 6%;
+	height: 25px;
+	margin-left: 20%;
+	margin-top: 2%;
+}
+
+/*footer*/
+.copyright{
+	font-family:"Time New Roman";
+	padding-top: 15px;
+	text-align: center;
+}

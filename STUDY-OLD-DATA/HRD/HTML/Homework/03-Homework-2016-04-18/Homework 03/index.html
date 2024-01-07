@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HRD Register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.div_student div label{
+			float: left;
+			width: 230px;
+		}
+	</style>
+</head>
+<body>
+	<div id="main_div">
+		<div id="top_bar">
+			<div id="top_logo"><img src="logohrd.png"></div>
+			<div id="title">
+				
+					#09, st G3, Phnom Penh Thmey Commune, Sen Sok district, Phnom Penh<br>
+					Tel: (855) 96 88 52 699<br>
+					Email: chhunly.smart@gmail.com, Website: kshrd.com.kh, Facebook: facebook.com/chhunly.smart
+				
+			</div>
+			<div id="top_photo"><img src="photo.jpg"></div>
+		</div>
+
+		<div>
+			<form>
+				<fieldset class="field_style">
+					<legend>Student Information</legend>
+					<div class="div_student">
+				    	<div>
+							<label>Student ID:</label>
+							<input type="text"></input>
+						</div>
+						<div>
+							<label for="">National ID Number:</label>
+							<input type="text"></input>
+						</div>
+						<div>
+							<label for="">Full Number:</label>
+							<input type="text"></input>
+						</div>
+						<div>
+							<label for="">Full Name:</label>
+							<input type="text"></input>
+							<input type="text"></input>
+						</div>
+						<div>
+							<div class="inner">
+								<label for="">Gender:</label>
+								<input type="radio" name="sex" value="male" required="" checked="true">Male</input>
+								<input type="radio" name="sex" value="female" required="">Female</input>
+							</div>
+							<div>
+								<label>University</label>
+								<select name="university" required="" style="margin-left: 6%; width: 30%;" class="field">
+									<optgroup label="Public University">
+										<option value="rupp">RUPP</option>
+										<option value="itc">ITC</option>
+									</optgroup>
+									<optgroup label="Private University">
+										<option value="norton">Norton</option>
+										<option value="setec">SETEC</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
+						<div>
+							<label for="">Date of Birth:</label>
+							<input type="text"></input>
+						</div>
+						<div>
+							<label for="">Place of Birth:</label>
+							<input type="text"></input>
+						</div>
+						<div>
+							<label>Permanent Address:</label>	
+							<textarea name="address" required="" placeholder="current address" class="date" rows="4" resize="none"></textarea>
+						</div>	
+					</div>
+
+					
+				</fieldset>
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>

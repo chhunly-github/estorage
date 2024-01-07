@@ -1,0 +1,52 @@
+<body>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	table, th, td
+	{
+		border-collapse:collapse;
+		border:1px solid black;
+	}
+	th, td
+	{
+		padding:5px;
+	}
+</style>
+</head>
+<body>
+<h3>Horizontal Headings:</h3>
+
+<table>
+<tbody><tr>
+  <th>Name</th>
+  <th>Telephone</th>
+  <th>Telephone</th>
+</tr>
+<tr>
+  <td>Bill Gates</td>
+  <td>555 77 854</td>
+  <td>555 77 855</td>
+</tr>
+</tbody></table>
+
+<h3>Vertical Headings:</h3>
+
+<table>
+<tbody><tr>
+  <th>Name:</th>
+  <td>Bill Gates</td>
+</tr>
+<tr>
+  <th>Telephone:</th>
+  <td>555 77 854</td>
+</tr>
+<tr>
+  <th>Telephone:</th>
+  <td>555 77 855</td>
+</tr>
+</tbody></table>
+
+</body>
+</html>

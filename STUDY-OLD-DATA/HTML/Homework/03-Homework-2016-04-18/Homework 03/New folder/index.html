@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HRD Register</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		.div_student div label{
+			float: left;
+			width: 230px;
+		}
+	</style>
+</head>
+<body>
+	<div id="main_div">
+		<div id="top_bar">
+			<div id="top_logo"><img src="logohrd.png"></div>
+			<div id="title">
+				
+					#09, st G3, Phnom Penh Thmey Commune, Sen Sok district, Phnom Penh<br>
+					Tel: (855) 96 88 52 699<br>
+					Email: chhunly.smart@gmail.com, Website: kshrd.com.kh, Facebook: facebook.com/chhunly.smart
+				
+			</div>
+			<div id="top_photo"><img src="photo.jpg"></div>
+		</div>
+
+		<div>
+			<form>
+				<fieldset class="field_style">
+					<legend>Student Information</legend>
+					
+				<div >
+					
+					<div class="label">
+						<label>Student ID:</label>
+						<br/><br/>
+						<label>National ID Number<sup class="alterisk">*</sup>:</label>
+						<br/><br/>
+						<label>Full Name:<sup class="alterisk">*</sup></label>
+						<br/><br/>
+						<label>Gender:<sup></sup></label>
+						<br/><br/>
+						<label>Date of Birth:</label>
+						<br/><br/>
+						<label>Place of Birth:</label>
+						<br/><br/>
+						<label>Permanent Address:</label>
+						<br/><br/><br/><br/><br/>
+						<label>Contact:<sup class="alterisk">*</sup></label>
+					</div>
+
+					<div style="padding-top: 2%">
+						<input type="text" name="txtID" readonly="true" placeholder="20160111" class="formartField"></input>
+						<br/><br/>
+						<input type="number" name="txtNID" placeholder="Khmer ID Number" required="" class="field" min="0" max="99"></input>
+						<br/><br/>
+						<input type="text" name="txtFName" placeholder="First Name" required="" class="field"></input>
+						<input type="text" name="txtLName" placeholder="Last Name" required="" class="field"></input>
+						<br/><br/>
+						<input type="radio" name="sex" value="male" required="" checked="true">Male</input>
+						<input type="radio" name="sex" value="female" required="">Female</input>
+						<label style="margin-left: 12%;">University:</label>
+						<select name="university" required="" style="margin-left: 6%; width: 30%;" class="field">
+							<optgroup label="Public University">
+								<option value="rupp">RUPP</option>
+								<option value="itc">ITC</option>
+							</optgroup>
+							<optgroup label="Private University">
+								<option value="norton">Norton</option>
+								<option value="setec">SETEC</option>
+							</optgroup>
+						</select>
+						<br/><br/>
+						<input type="date" name="input" required="" class="input" ></input>
+						<br/><br/>
+						<input type="text" name="input" placeholder="Place of birth" required="" class="input" ></input>
+						<br/><br/>
+						<textarea name="address" required="" placeholder="current address" class="input" rows="4" resize="none"></textarea>
+						<br/><br/>
+						<label>Phone:</label>
+						<input type="text" name="phone" required="" placeholder="Phone" ></input>
+						<label  style="margin-left: 2%;">Email<sup class="alterisk">*</sup>:</label>
+						<input type="text" class="field" name="email" required="" placeholder="Email"  style="margin-left: 8%;"></input>
+					</div>
+					
+				</fieldset>
+			</form>
+			<form>
+				<fieldset class="field_style">
+					<legend>Parents Information</legend>
+					<div class="label">
+						<label>Father Name:</label>
+						<br/><br/><br/><br/>
+						<label>Phone:<sup></sup></label>
+						<br/><br/>
+						<label>Mother Name:</label>
+						<br/><br/>
+						<label>Parents's Address:</label>
+						<br/><br/><br/><br/><br/>
+						<label>Phone:<sup></sup></label>
+					</div>
+
+					<div style="padding-top: 2%">
+						<input type="text" name="txtFatherName" class="parent_input"></input>
+						<br/><br/><br/><br/>
+						<input type="text" name="txtPhone" class="field"></input>
+						<label style="margin-left: 2%;">Job:</label>
+						<input type="text" name="txtJob" style="width: 20%; margin-left: 2%; "></input>
+						<br/><br/>
+						<input type="text" name="txtMotherName" class="parent_input"></input>
+						<br/><br/>
+						<textarea name="address" class="input" rows="4" resize="none" placeholder="Home Number, Street, Sangkat, Khan, City/Province"></textarea>
+						<br/><br/>
+						<input type="text" name="phone" class="field"></input>
+						<label style="margin-left: 2%;">Job:</label>
+						<input type="text" name="txtJob" style="width: 20%; margin-left: 2%; "></input>
+					</div>
+					<br/>
+					<div style="width: 20%; margin-left: 10%; float: left;">
+						Complete Form Issuer Contact:<br/>
+						Apply From Issuer Contact:
+					</div>
+					<div style="width: 30%; float: left;">
+						077 77 123 6<br/>
+						099 768 481, 015 88888 04<br/>
+						086 53 93 54, 097 959 33 88
+					</div>
+					<div>
+						<input type="submit" value="Update" class="submit"></input>
+					</div>
+				</fieldset>
+			</form>
+
+			<div class="copyright">
+				<p>Copyright &copy KSHRD 2016, All right reserved</p>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

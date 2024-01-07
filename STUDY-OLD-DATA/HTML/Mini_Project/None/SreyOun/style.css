@@ -1,0 +1,245 @@
+body{
+	margin:0px;	
+}
+#mybody{
+	width:1100px;
+	margin:0 auto;
+}
+#mybanner{
+	width:100%;
+	height:80px;
+	background-color:#fff;
+	position:fixed;	
+	left:0px;
+	top:0px;
+	border-bottom:solid #CCC 1px;
+}
+#mymenu{
+	width:100%;
+	height:50px;
+	background-color:#fff;
+	margin-top:85px;
+	border-bottom:solid #CCC 1px;
+}
+#mycontainer{
+	width:1100px;
+	margin:10px auto;
+}
+#myleft{
+	width:400px;
+	padding-bottom:20px;
+	float:left;
+}
+#myright{
+	width:700px;
+	padding-bottom:20px;
+	float:left;
+}
+
+#myleft1{
+	width:670px;
+	padding-bottom:20px;
+	float:left;
+}
+#myright1{
+	width:400px;
+	padding-bottom:20px;
+	float:left;
+	background-color:#CCC;
+}
+#myfooter
+{
+	width:100%;
+	background-color:#000;
+	clear:both;
+}
+
+#menutop{
+	width:100%;	
+	margin:0px;
+
+}
+#menutop li{
+	float:left;
+	height:80px;
+	line-height:80px;
+	list-style:none;	
+	border-right:solid #fff 1px;
+	    -webkit-transition: border 1s, color 1s, background 1s;
+		font-family:"Times New Roman", Times, serif;
+}
+#menutop li:hover{
+	background-color:#CCC;	
+}
+#menutop li a{
+	text-decoration:none;
+	color:#000;
+	padding:40px 40px;	
+}
+#menutop li a:hover{
+	color: rgba(209,98,220,1.00);	
+}
+#mybanner:hover{
+	border-bottom:solid #999 1px;	
+}
+#mybanner:hover>#menutop li{
+	border-right:solid #999 1px;
+}
+
+
+#menutop1{
+	width:100%;	
+}
+#menutop1 li{
+	list-style:none;
+	float:left;
+	height:50px;
+	line-height:50px;
+	padding-left:40px;
+	padding-right:40px;	
+}
+#menutop1 li input{
+	margin-top:15px;
+}
+#menutop1 li a{
+	text-decoration:none;
+	color:#000;	
+}
+#menutop1 li a:hover{
+	color: rgba(209,98,220,1.00);	
+}
+#conmenu{
+	width:1180px;
+	margin:0 auto;	
+}
+
+
+
+#connews{
+	width:400px;
+}
+#connewsheader{
+	width:400px;
+	height:40px;
+	line-height:40px;
+	text-align: center;
+	border-bottom:solid #CCC 1px;	
+}
+#connewssub{
+	width:400px;	
+}
+
+#connewsdetails{
+	width:400px;
+	float:left;
+}
+#connewsdetailsimage{
+	width:100px;
+	height:100px;	
+	float:left;
+}
+#connewsdetailsimage img{
+	width:80px;
+	height:80px;
+	padding-left:10px;
+	padding-top:10px;	
+}
+#connewsdetailstext{
+	width:300px;
+	float:left;
+	padding-top:10px;
+}
+#connewsdetailstext a{
+	text-decoration:none;
+	color:#000;	
+}
+#connewsdetailstext a:hover{
+	
+	text-decoration:underline;
+	color: rgba(182,24,224,1.00);	
+}
+
+#connewpop{
+	width:325px;
+	display:inline-block;
+	margin-bottom:10px;
+	vertical-align:top;
+}
+
+#connewpopimage{
+	width:325px;
+	height:250px;
+	
+}
+#connewpopimage img{
+	width:100%;
+	height:100%;
+}
+
+#connewpoptext a{
+	text-decoration:none;
+	color:#000;
+	
+}
+
+#connewpoptext a:hover{
+	color: rgba(182,24,224,1.00);
+}
+
+#connewpoptext{
+	width:325;
+	text-align:center;
+}
+
+#colfooter{
+	width:210px;
+	display:inline-block;
+	vertical-align:top;
+}
+#menufooter{
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+#menufooter li a{
+	text-decoration:none;
+	color:#CCC;
+	line-height:30px;
+	font-size:14px;
+}
+
+
+#menufooter li a:hover{
+	text-decoration: underline;
+	color:#00F;
+	
+}
+#conmenufooter{
+	width:1100px;
+	margin:0 auto;	
+}
+
+#makeup{
+	width:350px;
+	float:left;
+}
+#conboximage{
+	width:350px;
+	height:400px;
+	background-color:#CCC;
+			
+}
+#conboximage img{
+	width:80%;
+	height:80%;
+	padding:10%;
+
+}
+#conboximage:hover{
+	background-color:#999;	
+}
+#conboxtext{
+	width:350px;
+	text-align:center;	
+}
+

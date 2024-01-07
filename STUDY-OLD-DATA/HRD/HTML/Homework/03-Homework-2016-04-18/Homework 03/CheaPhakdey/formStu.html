@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#logo{
+			float: left;
+			padding-left: 1%;
+		}
+		#title{
+			padding-top: 4%;
+			text-align: center;
+			width: 67%;
+			float: left;
+			padding-left: 1%;
+			padding-right: 1%;
+			font-family: "Time New Roman";
+		}
+		.formartField{
+			background-color: #e0e0e0;
+			width: 30%;
+		}
+		.field{
+			width: 30%;
+			background-color:#c8e6c9;
+		}
+		.fieldP{
+			width: 61%;
+			background-color:#c8e6c9;
+		}
+		.label{
+			width: 15%;
+			float: left;
+			margin-left: 10%;
+			padding-top: 2%;
+		}
+		.alterisk{
+			color: red;
+		}
+		.date{
+			width: 61%;
+			background-color:#c8e6c9;
+		}
+		.submit{
+			background-color: #00b8d4;
+			width: 6%;
+			height: 25px;
+			margin-left: 20%;
+			margin-top: 2%;
+		}
+		#titlef{
+			background-color: #78909C;
+			color: #01579B;
+			border: 1px solid white;
+			border-bottom: 1px solid white;
+			border-top: 1px solid white;
+			border-radius: 5px;
+		}
+		#photo img{
+			border: 1px solid white;
+			border-bottom: 1px solid white;
+			border-top: 1px solid white;
+			border-radius: 15px;
+		}
+		.footer{
+			font-family:"Time New Roman";
+			padding-top: 28%;
+			font-size: 110%; 
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+		<div id="logo"><img src=".\Homework18Aprimages\logohrd.png"></div>
+		<div id="title"><b>#12, St 323, Sangkat Boeung Kak II, Khan Toul Kork, Phnom Penh<br/>
+				Tel:(855)23 99 13 14, Fax(855)23 99 14 15<br/>
+				Email: info.kshrd@gmail.com, phirum gm@gmail.com Website: www.kshrd.com.kh, Facebook:facebook.com/ksignhrd</b>
+		</div>
+		<div id="photo"><img src=".\Homework18Aprimages\phpto.jpg"></div>
+		<form>
+			<div style="color: #009688;" >
+				<fieldset style="background-color: #e3f2fd">
+					<legend id="titlef">Student Information</legend>
+					<div class="label">
+						<label>Student ID:</label>
+						<br/><br/>
+						<label>National ID Number<sup class="alterisk">*</sup>:</label>
+						<br/><br/>
+						<label>Full Name:<sup class="alterisk">*</sup></label>
+						<br/><br/>
+						<label>Gender:<sup></sup></label>
+						<br/><br/>
+						<label>Date of Birth:</label>
+						<br/><br/>
+						<label>Place of Birth:</label>
+						<br/><br/>
+						<label>Permanent Address:</label>
+						<br/><br/><br/><br/><br/>
+						<label>Contact:<sup class="alterisk">*</sup></label>
+					</div>
+					<div style="padding-top: 2%">
+						<input type="text" name="txtID" readonly="true" placeholder="20160111" class="formartField"></input>
+						<br/><br/>
+						<input type="number" name="txtNID" placeholder="Khmer ID Number" required="" class="field" min="0" max="99"></input>
+						<br/><br/>
+						<input type="text" name="txtFName" placeholder="First Name" required="" class="field"></input>
+						<input type="text" name="txtLName" placeholder="Last Name" required="" class="field"></input>
+						<br/><br/>
+						<input type="radio" name="sex" value="male" required="" checked="true">Male</input>
+						<input type="radio" name="sex" value="female" required="">Female</input>
+						<label style="margin-left: 12%;">University:</label>
+						<select name="university" required="" style="margin-left: 6%; width: 30%;" class="field">
+							<optgroup label="Public University">
+								<option value="rupp">RUPP</option>
+								<option value="itc">ITC</option>
+							</optgroup>
+							<optgroup label="Private University">
+								<option value="norton">Norton</option>
+								<option value="setec">SETEC</option>
+							</optgroup>
+						</select>
+						<br/><br/>
+						<input type="date" name="date" required="" class="date" ></input>
+						<br/><br/>
+						<input type="text" name="date" placeholder="Place of birth" required="" class="date" ></input>
+						<br/><br/>
+						<textarea name="address" required="" placeholder="current address" class="date" rows="4" resize="none"></textarea>
+						<br/><br/>
+						<label>Phone:</label>
+						<input type="text" name="phone" required="" placeholder="Phone" style="background-color: #c8e6c9"></input>
+						<label style="margin-left: 2%;">Email<sup class="alterisk">*</sup>:</label>
+						<input type="text" name="email" required="" placeholder="Email" class="field" style="margin-left: 8%;"></input>
+					</div>
+				</fieldset>
+			</div>
+			<br/>
+			<div style="float: left; width: 100%; color: #009688;">
+				<fieldset style="background-color: #e3f2fd">
+					<legend id="titlef">Parents Information</legend>
+					<div class="label">
+						<label>Father Name:</label>
+						<br/><br/><br/><br/>
+						<label>Phone:<sup></sup></label>
+						<br/><br/>
+						<label>Mother Name:</label>
+						<br/><br/>
+						<label>Parents's Address:</label>
+						<br/><br/><br/><br/><br/>
+						<label>Phone:<sup></sup></label>
+					</div>
+					<div style="padding-top: 2%">
+						<input type="text" name="txtFatherName" class="fieldP"></input>
+						<br/><br/><br/><br/>
+						<input type="text" name="txtPhone" class="field"></input>
+						<label style="margin-left: 2%;">Job:</label>
+						<input type="text" name="txtJob" style="width: 20%; margin-left: 2%; background-color: #c8e6c9"></input>
+						<br/><br/>
+						<input type="text" name="txtMotherName" class="fieldP"></input>
+						<br/><br/>
+						<textarea name="address" class="date" rows="4" resize="none" placeholder="Home Number, Street, Sangkat, Khan, City/Province"></textarea>
+						<br/><br/>
+						<input type="text" name="phone" class="field"></input>
+						<label style="margin-left: 2%;">Job:</label>
+						<input type="text" name="txtJob" style="width: 20%; margin-left: 2%; background-color: #c8e6c9"></input>
+					</div>
+					<br/>
+					<div style="width: 20%; margin-left: 10%; float: left;">
+						Complete Form Issuer Contact:<br/>
+						Apply From Issuer Contact:
+					</div>
+					<div style="width: 30%; float: left;">
+						077 77 123 6<br/>
+						099 768 481, 015 88888 04<br/>
+						086 53 93 54, 097 959 33 88
+					</div>
+					<div>
+						<input type="submit" value="Update" class="submit"></input>
+					</div>
+				</fieldset>
+			</div>
+		</form>
+		<div class="footer">
+			<b>Copyright &copy KSHRD 2016, All right reserved</b>
+		</div>
+</body>
+</html>

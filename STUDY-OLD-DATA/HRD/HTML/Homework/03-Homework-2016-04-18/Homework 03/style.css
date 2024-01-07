@@ -1,0 +1,57 @@
+
+#main_div{
+	margin: 0 auto;
+	width: 80%;
+	height: 1000px;
+	background-color:#CCCCCC;
+}
+/*top div*/
+#top_bar{
+	margin: 0 auto;
+	height: 20%;
+/* 	background-color: #333333; */
+}
+#top_logo img{
+	float:left;
+	width: 15%;
+}
+#title{
+	float: left;
+	width: 70%;
+	text-align: center;
+/* 	background-color: #DDDDDD; */
+	margin-top: 2%;
+}
+#top_photo{
+	float: right;
+	width: 15%;
+/* 	background-color: #CCCCCC; */
+	
+}
+#top_photo img{
+	width: 80%;
+	border-radius: 20px;
+	
+}
+/*end of top*/
+/*center div*/
+.field_style{
+	font-family: arial;             
+	border: solid 1px blue;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+}
+.field_style legend{
+	font-size: 18px;
+	color: white;
+	background-color: #2196F3;
+}
+.div_student{
+	background-color: #EEEFFF;
+	float: left;
+}
+.div_student div{
+
+	margin-top: 3%;
+}
+.inner{
+	float: left;
+}

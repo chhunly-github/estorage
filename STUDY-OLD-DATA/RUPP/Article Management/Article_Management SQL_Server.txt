@@ -1,0 +1,49 @@
+CREATE TABLE art_userrole(
+	role_id smallint IDENTITY(1,1) PRIMARY KEY,
+	role_name nvarchar(30) UNIQUE NOT NULL,
+	description nvarchar
+);
+
+CREATE TABLE art_user(
+	user_id smallint IDENTITY(1,1) PRIMARY KEY,
+	user_name nvarchar(30) UNIQUE NOT NULL,
+	email nvarchar(30) UNIQUE NOT NULL,
+	firstname nvarchar(30) NOT NULL,
+	lastname nvarchar(30) NOT NULL,
+	gender nvarchar NOT NULL,
+	passwd nvarchar NOT NULL
+);
+
+CREATE TABLE page(
+	page_id smallint IDENTITY(1,1) PRIMARY KEY,
+	page_url VARCHAR UNIQUE NOT NULL,
+	page_title VARCHAR NOT NULL DEFAULT 'untitled',
+	page_content VARCHAR(max) NOT NULL,
+	user_id smallint FOREIGN KEY REFERENCES dbo.art_user(user_id) NOT NULL,
+	created_date DATE NOT NULL DEFAULT GETDATE(),
+);
+
+CREATE TABLE category(
+	category_id smallint IDENTITY(1,1) PRIMARY KEY,
+	category_name VARCHAR(30) UNIQUE NOT NUll,
+	description VARCHAR,
+);
+
+
+CREATE TABLE post(
+	post_id  smallint IDENTITY(1,1) PRIMARY KEY,
+	post_title VARCHAR NOT NULL DEFAULT 'untitled',
+	post_text VARCHAR(max) NOT NULL,
+	post_image VARCHAR,
+	post_date DATE NOT NULL DEFAULT GETDATE(),
+	author VARCHAR(30) NOT NULL DEFAULT 'unknown',
+	category_id smallint FOREIGN KEY REFERENCES category(category_id) NOT NULL
+);
+
+CREATE TABLE menu(
+	menu_id smallint IDENTITY(1,1) PRIMARY KEY,
+	menu_title VARCHAR(30) UNIQUE NOT NULL,
+	parent_id smallint FOREIGN KEY REFERENCES menu(menu_id),
+	user_id smallint FOREIGN KEY REFERENCES art_user(user_id) NOT NULL,
+	page_id smallint FOREIGN KEY REFERENCES page(page_id) NOT NULL
+);
